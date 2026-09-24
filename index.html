@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mariah Trader — Comunidad de Trading</title>
+<meta name="description" content="Una comunidad donde compartimos contenido de mercado, ideas y conversación. Únete en Telegram.">
+<meta name="theme-color" content="#06080C">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Mariah Trader — Comunidad de Trading">
+<meta property="og:description" content="Un espacio para seguir el mercado junto a otras personas.">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%2306080C'/><rect x='9' y='7' width='4' height='18' fill='%23F07316'/><rect x='19' y='11' width='4' height='14' fill='%2340D8A4'/></svg>">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- META PIXEL HERE -->
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1430585842364846');
+fbq('track', 'PageView');
+</script>
+<!-- End Meta Pixel Code -->
+
+<!-- TIKTOK PIXEL HERE -->
+
+<!-- GOOGLE ANALYTICS HERE -->
+
+<style>
+/* ============================================================
+   COR DA MARCA — trocar só estas linhas para outra marca
+   ============================================================ */
+:root{
+  --accent:#F07316;        /* laranja Mariah */
+  --accent-deep:#6B2A08;
+  --accent-soft:rgba(240,115,22,.55);
+  --green:#40D8A4;
+
+  --ink:#06080C;
+  --bone:#FFFFFF;
+  --muted:#AEB8C6;
+  --font:'Poppins',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--ink);color:var(--bone);font-family:var(--font);
+  font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img,svg{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:2px solid var(--bone);outline-offset:4px}
+
+/* ============================================================
+   HERO
+   ============================================================ */
+.hero{position:relative;min-height:100svh;display:flex;align-items:center;overflow:hidden;
+  background:
+    radial-gradient(75% 65% at 82% 52%, rgba(240,115,22,.40), transparent 62%),
+    radial-gradient(110% 80% at 12% 12%, rgba(107,42,8,.42), transparent 62%),
+    linear-gradient(165deg,#1A0C05 0%,var(--ink) 68%)}
+
+.art{position:absolute;right:-6%;top:0;bottom:0;width:72%;opacity:.72;pointer-events:none}
+.art svg{width:100%;height:100%}
+
+.wrap{position:relative;z-index:2;width:100%;max-width:1240px;margin:0 auto;padding:60px 22px}
+.copy{max-width:560px}
+
+.kicker{display:inline-flex;align-items:center;gap:9px;border:1px solid rgba(255,255,255,.16);
+  background:rgba(4,8,14,.5);backdrop-filter:blur(6px);border-radius:100px;padding:7px 15px;
+  margin-bottom:24px;font-size:11.5px;letter-spacing:.15em;text-transform:uppercase;color:var(--muted)}
+.dot{width:6px;height:6px;border-radius:50%;background:var(--green);box-shadow:0 0 0 3px rgba(64,216,164,.2)}
+
+h1{margin:0;font-weight:600;letter-spacing:-.025em;line-height:1.14;
+  font-size:clamp(31px,7.6vw,50px)}
+h1 em{font-style:normal;color:var(--accent)}
+
+.sub{margin:22px 0 0;color:var(--muted);font-size:clamp(15px,4vw,17.5px);max-width:46ch}
+.sub b{color:var(--bone);font-weight:500}
+
+/* BOTÃO ÚNICO */
+.btn{display:flex;align-items:center;justify-content:center;gap:11px;width:100%;margin-top:34px;
+  font-weight:600;font-size:15.5px;letter-spacing:.07em;text-transform:uppercase;
+  padding:19px 30px;border-radius:100px;cursor:pointer;color:#fff;
+  background:linear-gradient(180deg,#F99A4E,var(--accent) 52%,#A8480F);
+  box-shadow:0 16px 38px -14px rgba(240,115,22,.95),inset 0 1px 0 rgba(255,255,255,.28);
+  transition:transform .16s,box-shadow .22s}
+.btn:hover{box-shadow:0 20px 46px -14px rgba(240,115,22,1),inset 0 1px 0 rgba(255,255,255,.36)}
+.btn:active{transform:translateY(1px)}
+@media(min-width:560px){.btn{display:inline-flex;width:auto;padding:20px 48px}}
+.tg{width:19px;height:19px;flex:none}
+
+.note{margin-top:17px;font-size:11.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--muted)}
+
+/* MOBILE */
+@media(max-width:880px){
+  .hero{min-height:auto}
+  .art{width:150%;right:-30%;top:auto;bottom:-4%;height:62%;opacity:.55}
+  .wrap{padding:66px 20px 300px}
+  .copy{max-width:100%}
+}
+
+/* FOOTER */
+footer{border-top:1px solid rgba(255,255,255,.07);background:#04060A;padding:26px 0 34px}
+.f-wrap{max-width:1240px;margin:0 auto;padding:0 22px}
+.disc{color:#6F7885;font-size:11px;line-height:1.7;margin:0}
+.f-bot{margin-top:14px;display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;
+  font-size:11px;color:#6F7885;letter-spacing:.05em}
+
+@media(prefers-reduced-motion:reduce){*{transition-duration:.001ms!important;animation:none!important}}
+</style>
+</head>
+<body>
+
+<!-- META PIXEL NOSCRIPT HERE -->
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1430585842364846&ev=PageView&noscript=1"/></noscript>
+
+<section class="hero">
+  <div class="art" aria-hidden="true">
+    <svg viewBox="0 0 900 900" preserveAspectRatio="xMidYMid slice">
+      <defs>
+        <linearGradient id="line" x1="0" y1="1" x2="1" y2="0">
+          <stop offset="0" stop-color="#40D8A4" stop-opacity=".2"/>
+          <stop offset="1" stop-color="#F07316" stop-opacity="1"/>
+        </linearGradient>
+        <linearGradient id="fill" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#F07316" stop-opacity=".28"/>
+          <stop offset="1" stop-color="#F07316" stop-opacity="0"/>
+        </linearGradient>
+        <pattern id="g" width="75" height="75" patternUnits="userSpaceOnUse">
+          <path d="M75 0H0v75" fill="none" stroke="rgba(255,255,255,.045)" stroke-width="1"/>
+        </pattern>
+        <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+          <feGaussianBlur stdDeviation="14" result="b"/>
+          <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+        </filter>
+      </defs>
+
+      <rect width="900" height="900" fill="url(#g)"/>
+
+      <!-- velas -->
+      <g stroke-width="11" opacity=".5">
+        <path d="M70 760v80" stroke="#F07316"/><path d="M130 715v90" stroke="#F07316"/>
+        <path d="M190 745v70" stroke="#A8480F"/><path d="M250 670v100" stroke="#F07316"/>
+        <path d="M310 700v80" stroke="#A8480F"/><path d="M370 615v110" stroke="#F07316"/>
+        <path d="M430 650v85" stroke="#A8480F"/><path d="M490 560v115" stroke="#F07316"/>
+        <path d="M550 600v85" stroke="#A8480F"/><path d="M610 500v120" stroke="#40D8A4"/>
+        <path d="M670 545v90" stroke="#A8480F"/><path d="M730 435v125" stroke="#40D8A4"/>
+        <path d="M790 480v95" stroke="#F07316"/><path d="M850 370v135" stroke="#40D8A4"/>
+      </g>
+
+      <!-- área -->
+      <path d="M70 800 130 760 190 780 250 720 310 740 370 665 430 692 490 610 550 642
+               610 550 670 590 730 497 790 527 850 437 L900 420 900 900 70 900Z"
+            fill="url(#fill)"/>
+
+      <!-- linha principal -->
+      <path d="M70 800 130 760 190 780 250 720 310 740 370 665 430 692 490 610 550 642
+               610 550 670 590 730 497 790 527 850 437"
+            fill="none" stroke="url(#line)" stroke-width="3.5" stroke-linejoin="round" filter="url(#glow)"/>
+
+      <circle cx="850" cy="437" r="7" fill="#06080C" stroke="#40D8A4" stroke-width="3"/>
+    </svg>
+  </div>
+
+  <div class="wrap">
+    <div class="copy">
+      <span class="kicker"><span class="dot"></span>Comunidad · Telegram</span>
+
+      <h1>Un espacio para seguir los mercados <em>día a día</em></h1>
+
+      <p class="sub">Entra a una comunidad donde <b>compartimos contenido, ideas y conversación</b> sobre los mercados, de forma organizada y fácil de seguir.</p>
+
+      <!-- ============================================================
+           LINK DO TELEGRAM — trocar nas duas ocorrências do arquivo
+           ============================================================ -->
+      <a class="btn telegram-cta" id="main-telegram" href="https://t.me/+ycNBir5_RsIyYmMx" target="_blank" rel="noopener">
+        <svg class="tg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.9 4.3 18.6 20c-.2 1-.9 1.3-1.8.8l-4.9-3.6-2.4 2.3c-.3.3-.5.5-1 .5l.4-5 9.1-8.2c.4-.4-.1-.6-.6-.2L6.2 13.1l-4.8-1.5c-1-.3-1-1 .2-1.5l18.8-7.2c.9-.3 1.6.2 1.5 1.4Z"/></svg>
+        Entrar a la comunidad
+      </a>
+
+      <p class="note">Acceso gratuito · Grupo de Telegram</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="f-wrap">
+    <p class="disc">Aviso de riesgo: operar en los mercados financieros implica un alto nivel de riesgo y puede no ser adecuado para todos los inversores. Puedes perder parte o la totalidad de tu capital. El contenido compartido en esta comunidad tiene carácter informativo y educativo, no constituye asesoramiento de inversión ni garantiza ningún resultado. Opera únicamente con dinero que puedas permitirte perder.</p>
+    <div class="f-bot">
+      <span>© <span id="yr">2026</span> Mariah Trader</span>
+      <span>Sin afiliación con Telegram ni con brokers</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var y=document.getElementById('yr'); if(y)y.textContent=new Date().getFullYear();
+  document.querySelectorAll('.telegram-cta').forEach(function(b){
+    b.addEventListener('click',function(){
+      var id=b.id||'unknown';
+      try{if(typeof fbq==='function')fbq('trackCustom','ClickTelegram',{content_name:id});}catch(e){}
+      try{if(typeof ttq!=='undefined'&&ttq.track)ttq.track('ClickButton',{content_id:id});}catch(e){}
+      try{if(typeof gtag==='function')gtag('event','telegram_click',{cta_id:id});}catch(e){}
+      try{window.dataLayer=window.dataLayer||[];window.dataLayer.push({event:'telegram_click',cta_id:id});}catch(e){}
+    },{passive:true});
+  });
+})();
+</script>
+</body>
+</html>
